@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-		"bundle": "browserify thesaurus.js > public/bundle.js",
-		"watch": "watchify thesaurus.js -o public/bundle.js -dv",
-		"go": "parallelshell 'npm run watch' 'nodemon server.js'"	
-				
+    "bundle": "browserify thesaurus.js > public/bundle.js",
+    "watch": "watchify thesaurus.js -o public/bundle.js -dv",
+    "go": "parallelshell 'npm run watch' 'nodemon server.js'"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browserify": "^13.0.0"
+  },
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "ecstatic": "^1.4.0"
   }
 }
